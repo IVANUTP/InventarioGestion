@@ -79,7 +79,7 @@ A continuación se muestran las principales pantallas del sistema de gestión de
 ### 📂 Gestión de Categorías
 
 #### 📋 Listado de Categorías
-![Listado de Categorías]([screenshots/categorias-listado.png](https://github.com/IVANUTP/InventarioGestion/blob/cc9afe18c3432481e2866c80a34b3499eedd6e85/categorias.png))
+![Listado de Categorías](https://github.com/IVANUTP/InventarioGestion/blob/cc9afe18c3432481e2866c80a34b3499eedd6e85/categorias.png)
 
 
 
