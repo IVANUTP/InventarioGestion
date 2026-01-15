@@ -88,14 +88,7 @@ A continuación se muestran las principales pantallas del sistema de gestión de
 ### 📦 Gestión de Productos
 
 #### 📋 Listado de Productos
-![Listado de Productos](screenshots/productos-listado.png)
-
-#### ➕ Crear Producto
-![Crear Producto](screenshots/productos-crear.png)
-
-#### ✏️ Editar Producto
-![Editar Producto](screenshots/productos-editar.png)
-
+![Listado de Productos](https://github.com/IVANUTP/InventarioGestion/blob/cc9afe18c3432481e2866c80a34b3499eedd6e85/productos.png)
 
 
 
