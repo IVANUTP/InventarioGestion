@@ -23,6 +23,8 @@ Route::middleware(['auth', 'nocache'])->group(function (){
     Route::get('/categorias/{id}/edit', [categoriaController::class, 'edit'])->name('categoria.edit');
     Route::put('/categorias/{id}', [categoriaController::class, 'update'])->name('categoria.update');
     Route::delete('/categorias/{id}', [categoriaController::class, 'destroy'])->name('categoria.destroy');
+    Route::get('/productos/export/excel', [ProductoController::class, 'exportExcel'])
+    ->name('productos.export.excel');
 
     Route::get('/producto',[productoController::class,'index'])->name('productos.index');
     Route::post('/producto-create',[productoController::class,'store'])->name('productos.store');
