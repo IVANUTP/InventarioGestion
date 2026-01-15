@@ -60,3 +60,46 @@ php artisan serve
 - Estructura ligera y alineada a las buenas prácticas de Laravel
 
 - Laravel Breeze fue elegido por ser una solución oficial, ligera y segura, ideal para proyectos pequeños y pruebas técnicas.
+
+## 🖥️ Interfaces del Sistema
+
+A continuación se muestran las principales pantallas del sistema de gestión de inventario:
+
+### 🔐 Login
+
+
+
+---
+
+### 🏠 Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+### 📂 Gestión de Categorías
+
+#### 📋 Listado de Categorías
+![Listado de Categorías](screenshots/categorias-listado.png)
+
+#### ➕ Crear Categoría
+![Crear Categoría](screenshots/categorias-crear.png)
+
+#### ✏️ Editar Categoría
+![Editar Categoría](screenshots/categorias-editar.png)
+
+---
+
+### 📦 Gestión de Productos
+
+#### 📋 Listado de Productos
+![Listado de Productos](screenshots/productos-listado.png)
+
+#### ➕ Crear Producto
+![Crear Producto](screenshots/productos-crear.png)
+
+#### ✏️ Editar Producto
+![Editar Producto](screenshots/productos-editar.png)
+
+
+
+
