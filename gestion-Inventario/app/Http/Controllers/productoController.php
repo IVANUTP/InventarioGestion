@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\ProductosExport;
 use App\Http\Requests\ProductoEditRequest;
 use App\Http\Requests\ProductoRequest;
 use App\Models\categoriaModel;
 use App\Models\productoModel;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 
 class productoController extends Controller
 {
@@ -28,6 +30,10 @@ class productoController extends Controller
         $categorias = categoriaModel::orderBy('nombre')->get();
 
         return view('productos.index', compact('productos', 'categorias', 'search'));
+    }
+    public function exportExcel()
+    {
+        return Excel::download(new ProductosExport, 'productos.xlsx');
     }
 
     /**

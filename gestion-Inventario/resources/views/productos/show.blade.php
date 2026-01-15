@@ -1,47 +1,62 @@
 <div class="bg-white shadow-2xl rounded-2xl overflow-hidden lg:col-span-2">
-
-    <!-- HEADER -->
     <div
-        class="flex flex-col md:flex-row md:items-center md:justify-between
+        class="flex flex-col lg:flex-row lg:items-center lg:justify-between
            gap-4 px-6 py-4 border-b
            bg-gradient-to-r from-indigo-50 to-white">
 
+        <!-- TITULO -->
         <div>
             <h3 class="text-lg font-semibold text-gray-800 flex items-center gap-2">
-                 Productos registrados
+                Productos registrados
             </h3>
             <p class="text-sm text-gray-500">
                 Control y administración del inventario
             </p>
         </div>
 
-        <!-- BUSCADOR -->
-        <form method="GET" action="{{ route('productos.index') }}" class="flex items-center gap-2 w-full md:w-auto">
+        <!-- ACCIONES -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full lg:w-auto">
 
-            <div class="relative w-full md:w-72">
+            <!-- BUSCADOR -->
+            <form method="GET" action="{{ route('productos.index') }}" class="flex items-center gap-2 w-full">
 
-                <input type="text" name="search" value="{{ request('search') }}" placeholder="Buscar producto..."
-                    class="w-full pl-10 pr-3 py-2 border rounded-xl
-                       focus:ring-2 focus:ring-indigo-500
-                       focus:border-indigo-500 text-sm">
-            </div>
+                <div class="relative w-full sm:w-72">
+                    <input type="text" name="search" value="{{ request('search') }}" placeholder="Buscar producto..."
+                        class="w-full pl-4 pr-3 py-2 border rounded-xl
+                           focus:ring-2 focus:ring-indigo-500
+                           focus:border-indigo-500 text-sm">
+                </div>
 
-            <button type="submit"
-                class="px-4 py-2 rounded-xl bg-indigo-600 text-white
-                   text-sm font-semibold hover:bg-indigo-700 transition">
-                Buscar
-            </button>
+                <button type="submit"
+                    class="px-4 py-2 rounded-xl bg-indigo-600 text-white
+                       text-sm font-semibold hover:bg-indigo-700 transition">
+                    Buscar
+                </button>
 
-            @if (request('search'))
-                <a href="{{ route('productos.index') }}"
-                    class="px-4 py-2 rounded-xl bg-gray-200 text-gray-700
-                      text-sm font-semibold hover:bg-gray-300 transition">
-                    Recargar
-                </a>
-            @endif
+                @if (request('search'))
+                    <a href="{{ route('productos.index') }}"
+                        class="px-4 py-2 rounded-xl bg-gray-200 text-gray-700
+                           text-sm font-semibold hover:bg-gray-300 transition">
+                        Recargar
+                    </a>
+                @endif
+            </form>
 
-        </form>
+            <!-- EXPORTAR EXCEL -->
+            <a href="{{ route('productos.export.excel') }}"
+                class="px-4 py-2 rounded-xl bg-green-600 text-white
+                   text-sm font-semibold hover:bg-green-700 transition
+                   flex items-center justify-center gap-2">
+
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
+
+                Exportar Excel
+            </a>
+        </div>
     </div>
+
 
 
     <!-- TABLE -->

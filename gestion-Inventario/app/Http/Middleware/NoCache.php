@@ -13,12 +13,17 @@ class NoCache
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-   public function handle(Request $request, Closure $next)
+  public function handle(Request $request, Closure $next)
     {
         $response = $next($request);
 
-        return $response->header('Cache-Control','no-cache, no-store, max-age=0, must-revalidate')
-                        ->header('Pragma','no-cache')
-                        ->header('Expires','Sat, 01 Jan 2000 00:00:00 GMT');
+        // ✅ Forma compatible con BinaryFileResponse
+        if (method_exists($response, 'headers')) {
+            $response->headers->set('Cache-Control', 'no-cache, no-store, must-revalidate');
+            $response->headers->set('Pragma', 'no-cache');
+            $response->headers->set('Expires', '0');
+        }
+
+        return $response;
     }
 }
