@@ -72,7 +72,7 @@ A continuación se muestran las principales pantallas del sistema de gestión de
 ---
 
 ### 🏠 Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](https://github.com/IVANUTP/InventarioGestion/blob/cc9afe18c3432481e2866c80a34b3499eedd6e85/graficas.png)
 
 ---
 
