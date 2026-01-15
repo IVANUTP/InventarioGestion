@@ -67,7 +67,7 @@ A continuación se muestran las principales pantallas del sistema de gestión de
 
 ### 🔐 Login
 
-
+![imagel alt](https://github.com/IVANUTP/InventarioGestion/blob/8fff8f76a8ea8926543e17d16c974ff4ff6d4936/login.png)
 
 ---
 
