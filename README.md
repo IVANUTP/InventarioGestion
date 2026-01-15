@@ -60,3 +60,35 @@ php artisan serve
 - Estructura ligera y alineada a las buenas prácticas de Laravel
 
 - Laravel Breeze fue elegido por ser una solución oficial, ligera y segura, ideal para proyectos pequeños y pruebas técnicas.
+
+## 🖥️ Interfaces del Sistema
+
+A continuación se muestran las principales pantallas del sistema de gestión de inventario:
+
+### 🔐 Login
+
+![imagel alt](https://github.com/IVANUTP/InventarioGestion/blob/8fff8f76a8ea8926543e17d16c974ff4ff6d4936/login.png)
+
+---
+
+### 🏠 Dashboard
+![Dashboard](https://github.com/IVANUTP/InventarioGestion/blob/cc9afe18c3432481e2866c80a34b3499eedd6e85/graficas.png)
+
+---
+
+### 📂 Gestión de Categorías
+
+#### 📋 Listado de Categorías
+![Listado de Categorías](https://github.com/IVANUTP/InventarioGestion/blob/cc9afe18c3432481e2866c80a34b3499eedd6e85/categorias.png)
+
+
+
+---
+
+### 📦 Gestión de Productos
+
+#### 📋 Listado de Productos
+![Listado de Productos](https://github.com/IVANUTP/InventarioGestion/blob/cc9afe18c3432481e2866c80a34b3499eedd6e85/productos.png)
+
+
+
